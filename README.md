@@ -1,7 +1,7 @@
 # Car Dealership Database
 
 ## ❓ What is it ?
-This is a car database application that I developed using MERN Stack and user is able to perform all CRUD operations
+This is a car database application I developed using MERN Stack and user is able to perform all CRUD operations
 
 ![Car Dealership](https://user-images.githubusercontent.com/70260072/200866835-d9f217bb-3f45-4f1e-a723-34305ccd0de2.png)
 
