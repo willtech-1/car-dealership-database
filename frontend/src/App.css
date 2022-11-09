@@ -1,0 +1,295 @@
+/*  */
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.App {
+  position: relative;
+  top: 20px;
+  right: 120px;
+  
+}
+
+.instructions{
+  margin-top: 2rem;
+  padding: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.instructions-wrapper > li{
+  font-size: 0.85rem;
+}
+
+.App-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 95px;
+  width: 100%;
+  margin: 0px auto -10px;
+  padding: 0px;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+/* Set for the first header section to display as flex and for the direction to be row. Also set the left margin. */
+#headersection1 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+}
+
+/* Set the  right margin of the second header section and set for the usage header to display on the right. */
+#headersection2 {
+  margin-right: 30px;
+  text-align: end;
+}
+
+/* Set the .gif image's height. */
+img {
+  height: 14vmin;
+}
+
+/* Set the font weight and padding of the header font. */
+h2 {
+  font-weight: 600;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+/* Set the bottom margin and the font size and colour of the info "button". */
+.fa-info-circle {
+  color: gray;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Set for the cursor to change to a pointer and for the icon to rotate over a 4 second interval, infinitely if hovered over. Set for the icon 
+to be rotated on the 50% axis and to rotate 720 degrees. */
+.fa-info-circle:hover {
+  animation: iconrotate 4s infinite;
+  cursor: pointer;
+}
+
+@keyframes iconrotate {
+  50% {
+    transform: rotate(720deg);
+  }
+}
+
+/* --- Modal --- */
+/* Set the top and the right margins of the modal's close button. */
+.close {
+  margin-top: -10px;
+  margin-right: 2px;
+}
+
+/* Set the modal's text size. */
+.modal {
+  font-size: 0.85rem;
+}
+
+/* Set for the modal footer to appear as flex and for it to appear in a row. Set the width and the padding. */
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0px;
+}
+
+/* Set for the first container of the modal footer to display as flex and as a row. Set the width and the left margin. */
+#modalfootercontainer1 {
+  display: flex;
+  flex-direction: row;
+  width: 78%;
+  margin-left: 10px;
+}
+
+/* Set the left and top margins of the modal footer's text. */
+#modalfootertext {
+  margin-top: 35px;
+  margin-left: 15px;
+}
+
+/* Set the right margin and the width of the modal footer's button. */
+#modalfooterbutton {
+  margin-right: 40px;
+  width: 14%;
+}
+
+/* --- App Container --- */
+/* Set for the container to appear as a grid and set the frames, font size, margins and padding. */
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px 10px;
+  font-size: 0.85rem;
+}
+
+/* --- Form --- */
+/* Set the width of the form. */
+form {
+  width: 360px;
+}
+
+/* Set the font weight and top margins of the form's labels. */
+label {
+  font-weight: bold;
+  margin-top: 1.5px;
+}
+
+/* Set the top and bottom margins of the form's different sections. */
+.form-group {
+  margin: 1px 0px;
+}
+
+/* Set the font size, padding and the bottom margin for the input sections. */
+.form-control {
+  font-size: 0.85rem;
+  margin-bottom: 0px;
+  padding: 5px 5px;
+}
+
+/* Set the margins, padding, background colour and border (styled, coloured and sized) of the form's buttons.*/
+.btn-primary {
+  margin-top: 6px;
+  margin-left: 2.2px;
+  margin-right: 2.2px;
+  padding: 4.5px 7px;
+  border: 1px solid darkgray;
+  background-color: lightgray;
+}
+
+
+
+/* Set the font size of the x1 of the editOne button and set the left margin to nest next to the icon. */
+#editone {
+  font-size: 0.75rem;
+  margin-left: -5px;
+}
+
+/* Set the font size of the x1 of the editOne button and set the right margin to nest next to the icon. */
+#editmany {
+  font-size: 0.8rem;
+  margin-left: -6px;
+}
+
+/* --- Table Section --- */
+/* Set the left padding and the font weight of the table's heading. */
+#tableheader {
+  padding-left: 7px;
+  font-weight: bold;
+}
+
+/* Set the margins of the table's container. */
+#listcontainer {
+  margin: 2px 0px 0px 10px;
+}
+
+.listcontainer{
+  position: relative;
+  top: 70px;
+}
+
+/* Set the width of the table. */
+table {
+  width: 930px;
+}
+
+/* Set the table header cells' bottom padding, set a gradient background and set for the tegxt to appear on a single line, by using no-wrap. */
+th {
+  padding: 7px 8px;
+  color: black;
+  background-color: lightgray;
+  white-space: nowrap;
+}
+
+/* Adjusted the top-left and bottom-left border raduises of the first table header cell. */
+.th-cell-left {
+  border-radius: 5px 0px 0px 5px;
+}
+
+/* Adjusted the top-right and bottom-right border raduises of the first table header cell. */
+.th-cell-right {
+  border-radius: 0px 5px 5px 0px;
+}
+
+/* Set the table header cells' vertical alignment, padding and font size. */
+td {
+  vertical-align: text-top;
+  padding: 7px;
+  border-bottom: 1px #0000002f solid;
+}
+
+/* --- Older Cars Modal --- */
+/* Set for the older cars' container to display as flex and the direction to row. Also set the width and the top and left margins. */
+#oldercarscontainer {
+  display: flex;
+  flex-direction: row;
+  width: 490px;
+  margin-top: 12px;
+  margin-left: -20px;
+}
+
+/* Set the top and right margins of the modal's header. */
+#oldercarsheader {
+  margin-top: 13px;
+  margin-right: 10px;
+}
+
+/* Set for the modal's content's justification to be centered. */
+#oldercarsmodal {
+  justify-content: center;
+}
+
+/* Set the width of the modal's content. */
+.modal-content {
+  width: 970px;
+}
+
+/* --- Footer --- */
+/* Set the size (height x width) and the background colour of the footer. */
+#footer {
+  height: 30px;
+  width: 100%;
+  background-color: transparent;
+}
+
+/* Set the font colour and weight, the top padding and the margins of the footer's header text. Also added a top border (styled, colored and 
+sized). */
+#footerheader {
+  margin: 5px auto;
+  padding-top: 5px;
+  width: 325px;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  border-top: 1px solid #000000;
+}
+
+/* Set the font colour of the footer's heart icon. Also implemented a drop-shadow filter do give the icon a 3D and defined look. */
+.fa-heart {
+  color: gray;
+  filter: drop-shadow(1px 2px 2px #000000);
+}
+
+/* Set the bottom and top margins, the font size of the "Scroll to Top" icon and for the cursor to change once the icon is hovered over. */
+.fa-angle-double-up {
+  margin-bottom: -10px;
+  margin-right: 35px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Set the font colour of the footer's "Scroll to Top" icon. */
+.fa-angle-double-up:hover {
+  color: #000000;
+}
